@@ -9,7 +9,9 @@
     margin-top: -15px;
 
 }
-
+.pdt-30{padding-top: 30px;}
+.pdb-30{padding-bottom: 30px;}
+.df{display: flex;align-items: center;}
 /*column aligment*/
 .colalign{
     width: 100%;
@@ -1040,8 +1042,8 @@ margin-bottom: 0.7em;
 }
 .table td, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     padding: 15px !important;
-    font-size: 0.85em;
-    color: #999;
+    font-size: 16px;
+    color: #916430;
     border-top: none !important;
 }
 .btn {
