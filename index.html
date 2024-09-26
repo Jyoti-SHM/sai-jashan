@@ -328,9 +328,25 @@
     <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
     <link href="css/flexslider.css" media="screen" property="" rel="stylesheet" type="text/css" />
     <link href="css/zoomslider.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/plugins/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/plugins/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/plugins/select2.css" rel="stylesheet" type="text/css" />
+    <link href="booking-form/css/plugins/themify-icons.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" />
     <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="booking-form/js/datepicker.js"></script>
+    <script type="text/javascript" src="booking-form/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="booking-form/js/custom.js"></script>
+    <script type="text/javascript" src="booking-form/js/jquery.isotope.v3.0.2.js"></script>
+    <script type="text/javascript" src="booking-form/js/select2.js"></script>
+    <script type="text/javascript" src="booking-form/js/scrollIt.min.js"></script>
+    <script type="text/javascript" src="booking-form/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="booking-form/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="booking-form/js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="booking-form/js/YouTubePopUp.js"></script>
     <!-- <script src="jq/jquery-1.11.1.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- <script src="jq/jquery-1.11.1.js"></script> -->
@@ -340,7 +356,7 @@
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script type="text/javascript" src="jq/Date_Function.js"></script>
     <link href="jq/mainHotel.css" rel="stylesheet" />
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(function() {
             $('#myModal').modal('show');
             $.datepicker.setDefaults({
@@ -380,7 +396,7 @@
                 return false;
             }
         }
-    </script>
+    </script> -->
     <style type="text/css">
         /*Unbeatable Deals*/
         
@@ -799,7 +815,60 @@
 
 
     
-    
+    <div class="booking-wrapper bg-secondary py-5">
+        <div class="container">
+            <div class="booking-inner clearfix">
+                <form  class="form1 clearfix check-form" onsubmit="return dateCheck(this)" role="form" method="post" action="https://www.easeroom.co/hotelbookingNew/home/landingIBE?strSpecificHotelId=3967" name="searchform" id="reservationform">
+                    <div class="col1 c1">
+                        <div class="input1_wrapper">
+                            <label>Check in</label>
+                            <div class="input1_inner">
+                                <input type="text" class="form-control input datepicker" name="CheckIn" id="CheckIn" placeholder="Check in">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col1 c1">
+                        <div class="input1_wrapper">
+                            <label>Check out</label>
+                            <div class="input1_inner">
+                                <input type="text" class="form-control input datepicker" name="CheckOut" id="CheckOut" placeholder="Check out">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2 c3">
+                       <div class="select1_wrapper">
+                           <label>Adults</label>
+                           <div class="select1_inner">
+                               <select class="select2 select" style="width: 100%">
+                                   <option value="1">1 Adult</option>
+                                   <option value="2">2 Adults</option>
+                                   <option value="3">3 Adults</option>
+                                   <option value="4">4 Adults</option>
+                               </select>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col2 c4">
+                       <div class="select1_wrapper">
+                           <label>Children</label>
+                           <div class="select1_inner">
+                               <select class="select2 select" style="width: 100%">
+                                   <option value="1">Children</option>
+                                   <option value="1">1 Child</option>
+                                   <option value="2">2 Children</option>
+                                   <option value="3">3 Children</option>
+                                   <option value="4">4 Children</option>
+                               </select>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col12 c6">
+                        <button type="submit" onmouseover="this.style.cursor='pointer'" onclick="setDateValues()" class="btn-form1-submit mx-auto" style="width: 15%;" >Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
     <div class="special featured">
         <div class="container">
             <div class="ab-w3l-spa">
